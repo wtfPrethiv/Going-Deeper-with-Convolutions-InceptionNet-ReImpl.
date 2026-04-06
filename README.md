@@ -1,4 +1,4 @@
-# InceptionNet v1 — CIFAR-10
+# InceptionNet v1 - CIFAR-10
 
 A from-scratch PyTorch reimplementation of **GoogLeNet / Inception v1** (Szegedy et al., 2014), with stem modifications to make it work on CIFAR-10's 32×32 images instead of the original ImageNet 224×224 input.
 
@@ -17,7 +17,7 @@ The original GoogLeNet stem (7×7 conv, stride 2 → MaxPool → ...) aggressive
 | Pool2 | MaxPool 3×3, stride 2 | MaxPool 2×2, stride 2 |
 | Aux pool | AvgPool 5×5, stride 3 | AvgPool 2×2, stride 2 |
 
-Everything after the stem — the 9 Inception blocks (3a/3b, 4a–4e, 5a/5b), two auxiliary classifiers, and the final FC head — follows the original paper exactly.
+Everything after the stem - the 9 Inception blocks (3a/3b, 4a–4e, 5a/5b), two auxiliary classifiers, and the final FC head follows the original paper exactly.
 
 ### Inception Block
 
